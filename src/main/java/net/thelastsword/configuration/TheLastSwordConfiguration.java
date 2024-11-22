@@ -24,9 +24,9 @@ public class TheLastSwordConfiguration {
     static {
         BUILDER.push("Increase Value");
         INCREASE_VALUE = BUILDER.comment("Damage increased per level of upgrade when level<6.")
-                                .define("Increase Value", 200.0);
+                                .define("Increase Value", 1.0);
         INCREASE_VALUE_HIGH_LEVEL = BUILDER.comment("Damage increased per level of upgrade when level>=6.")
-                                           .define("Increase Value High Level", 1024.0);
+                                           .define("Increase Value High Level", 1.0);
         BUILDER.pop();
 
         BUILDER.push("Modes");
@@ -54,9 +54,9 @@ public class TheLastSwordConfiguration {
 
         BUILDER.push("Dragon Egg Options");
         DROP_DRAGON_EGG = BUILDER.comment("Controls whether the Ender Dragon drops a dragon egg upon death.")
-                                 .define("Drop Dragon Egg", true);
+                                 .define("Drop Dragon Egg", false);
         MULTIPLE_DRAGON_EGGS = BUILDER.comment("Controls whether multiple dragon eggs are given to players who dealt significant damage.")
-                                      .define("Multiple Dragon Eggs", true);
+                                      .define("Multiple Dragon Eggs", false);
         BUILDER.pop();
 
         BUILDER.push("Absolute Destruction");
